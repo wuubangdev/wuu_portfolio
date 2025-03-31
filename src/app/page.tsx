@@ -1,8 +1,11 @@
+import HeroSection from "@/components/hero/HeroSection";
 
 export default function Home() {
   return (
-    <div className="h-screen">
-      Hello World!
-    </div>
+    <>
+      <HeroSection />
+      <div className="py-3.5"></div>
+    </>
+
   );
 }
