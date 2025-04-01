@@ -8,7 +8,7 @@ const HeroSection: React.FC = () => {
                 {/* Hero text */}
                 <div className='py-10 xl:text-[12rem] lg:text-[10rem] md:text-8xl leading-none font-bold text-white opacity-[2%]'>DEVELOPER</div>
                 {/* Main content */}
-                <div className='absolute inset-0 py-16 grid grid-cols-5 gap-4'>
+                <div className='absolute inset-0 py-16 grid grid-cols-5 gap-4 px-20'>
                     <div className='col-span-3 flex flex-col justify-center items-start gap-10 px-20 pt-10'>
                         <h1 className='xl:text-8xl lg:text-6xl md:text-4xl font-bold'>Fullstack Web & GIS Developer</h1>
                         <div className='flex items-center gap-4 mt-4 text-white/40'>
@@ -18,7 +18,7 @@ const HeroSection: React.FC = () => {
                         <button className='py-4 px-11 bg-gray-600 cursor-pointer hover:bg-amber-600 duration-500 text-lg font-medium'>Contact me</button>
                     </div>
                     <div className='col-span-2 pl-10 pr-20 flex flex-col gap-4'>
-                        <div className='bg-green-300 flex-1 relative'>
+                        <div className='bg-green-300/10 flex-1 relative'>
 
                         </div>
                     </div>
