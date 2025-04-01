@@ -1,4 +1,5 @@
 import About from "@/components/about/About";
+import Contact from "@/components/contact/Contact";
 import HeroSection from "@/components/hero/HeroSection";
 
 export default function Home() {
@@ -6,7 +7,7 @@ export default function Home() {
     <>
       <HeroSection />
       <About />
-      <div className="py-3.5"></div>
+      <Contact />
     </>
 
   );

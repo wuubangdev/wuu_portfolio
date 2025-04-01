@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import React from 'react'
 
-
-
 const Footer: React.FC = () => {
     return (
         <div className='w-full border-t-[0.5px] border-white/15 flex justify-center bg-gray-700/20 py-20'>
@@ -14,7 +12,7 @@ const Footer: React.FC = () => {
                             <g fill="#ffffff" fillRule="nonzero" stroke="none"
                                 strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10"
                                 strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none"
-                                fontSize="none" text-anchor="none">
+                                fontSize="none" textAnchor="none">
                                 <g transform="scale(5.33333,5.33333)">
                                     <path d="M20.5,46c-1.378,0 -2.5,-1.121 -2.5,-2.5v-17.5l-4.45,0.003c-1.367,0 -2.489,-1.11 -2.501,-2.476l-0.029,-3.003c-0.006,-0.673 0.25,-1.306 0.724,-1.783c0.472,-0.478 1.103,-0.741 1.776,-0.741h4.48v-4.5c0,-6.746 3.442,-10.462 9.691,-10.462c2.472,0 4.63,0.175 4.65,0.177c0.965,0.086 1.691,0.88 1.691,1.847v4.57c0,1.022 -0.832,1.854 -1.854,1.854h-2.908c-1.217,0 -2.208,0.99 -2.208,2.208l-0.056,4.306h4.438c0.713,0 1.393,0.306 1.867,0.838c0.474,0.532 0.699,1.243 0.616,1.951l-0.349,3c-0.146,1.261 -1.214,2.211 -2.482,2.211h-4.096v17.5c0,1.379 -1.122,2.5 -2.5,2.5z"></path></g></g>
                         </svg>
@@ -27,7 +25,7 @@ const Footer: React.FC = () => {
                     </Link>
                     <Link href={"https://github.com/wuubangdev"} target='_blank' className='group' >
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0,0,256,256" className='scale-75 group-hover:scale-90 duration-500'>
-                            <g fill="#ffffff" fill-rule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray=""
+                            <g fill="#ffffff" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray=""
                                 strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none"><g transform="scale(5.33333,5.33333)"><path d="M44,24c0,8.96 -5.88,16.54 -14,19.08v-5.08c0,-1.71 -0.72,-3.24 -1.86,-4.34c5.24,-0.95 7.86,-4 7.86,-9.66c0,-2.45 -0.5,-4.39 -1.48,-5.9c0.44,-1.71 0.7,-4.14 -0.52,-6.1c-2.36,0 -4.01,1.39 -4.98,2.53c-1.45,-0.35 -3.12,-0.53 -5.02,-0.53c-1.8,0 -3.46,0.2 -4.94,0.61c-0.96,-1.15 -2.64,-2.61 -5.06,-2.61c-1.42,2.28 -0.84,4.74 -0.3,6.12c-1.08,1.51 -1.7,3.45 -1.7,5.88c0,5.66 2.62,8.71 7.86,9.66c-0.67,0.65 -1.19,1.44 -1.51,2.34h-2.35c-1.44,0 -2,-0.64 -2.77,-1.68c-0.77,-1.04 -1.6,-1.74 -2.59,-2.03c-0.53,-0.06 -0.89,0.37 -0.42,0.75c1.57,1.13 1.68,2.98 2.31,4.19c0.57,1.09 1.75,1.77 3.08,1.77h2.39v4.08c-8.12,-2.54 -14,-10.12 -14,-19.08c0,-11.05 8.95,-20 20,-20c11.05,0 20,8.95 20,20z"></path></g></g>
                         </svg>
                     </Link>
