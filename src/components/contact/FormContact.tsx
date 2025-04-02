@@ -54,8 +54,8 @@ const FormContact: React.FC = () => {
                         className='w-full py-3 border-[0.5px] border-white/15 px-5 text-white outline-none focus:border-white/30 duration-500'
                         value={name}
                         onChange={(e) => {
-                            setName(e.target.value)
-                            setNameError("")
+                            setName(e.target.value);
+                            setNameError("");
                         }}
                     />
                     {nameError && <p className='text-red-500 text-sm'>{nameError}</p>}
