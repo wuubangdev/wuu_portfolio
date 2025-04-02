@@ -12,34 +12,85 @@ const FormContact: React.FC = () => {
     const [emailError, setEmailError] = React.useState<string>("");
     const [messageError, setMessageError] = React.useState<string>("");
 
+    const validateEmail = (email: string) => {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    };
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        setNameError("");
+        setEmailError("");
+        setMessageError("");
+
+        if (!name) {
+            setNameError("Name is required");
+        }
+        if (!email) {
+            setEmailError("Email is required");
+        } else if (!validateEmail(email)) {
+            setEmailError("Invalid email format");
+        }
+        if (!message) {
+            setMessageError("Message is required");
+        }
+
+        if (name && email && message && validateEmail(email)) {
+            // Handle form submission
+            console.log({ name, email, message });
+            // Reset form fields
+            setName("");
+            setEmail("");
+            setMessage("");
+        }
+    };
 
     return (
         <div className='w-full flex flex-col gap-5'>
-            <div className='grid grid-cols-2 gap-2'>
+            <div className='grid lg:grid-cols-2 md:grid-cols-1 gap-2'>
                 <div className='flex flex-col gap-2 px-2'>
                     <span className='text-[#919195]'>Name*</span>
-                    <input type="text" placeholder='Your Name' className='w-full py-3 border-[0.5px] border-white/15 px-5 text-white outline-none focus:border-white/30 duration-500'
-                        value={name} onChange={(e) => setName(e.target.value)} />
+                    <input type="text" placeholder='Your Name'
+                        className='w-full py-3 border-[0.5px] border-white/15 px-5 text-white outline-none focus:border-white/30 duration-500'
+                        value={name}
+                        onChange={(e) => {
+                            setName(e.target.value)
+                            setNameError("")
+                        }}
+                    />
                     {nameError && <p className='text-red-500 text-sm'>{nameError}</p>}
                 </div>
                 <div className='flex flex-col gap-2 px-2'>
                     <span className='text-[#919195]'>Email*</span>
                     <input type="email" placeholder='Your Email' className='w-full py-3 border-[0.5px] border-white/15 px-5 text-white outline-none focus:border-white/30 duration-500'
-                        value={email} onChange={(e) => setEmail(e.target.value)} />
+                        value={email}
+                        onChange={(e) => {
+                            setEmail(e.target.value);
+                            setEmailError("")
+                        }} />
                     {emailError && <p className='text-red-500 text-sm'>{emailError}</p>}
                 </div>
             </div>
             <div className='flex flex-col gap-2 px-2'>
                 <span className='text-[#919195]'>Message*</span>
                 <textarea placeholder='Message' rows={4} className='w-full py-3 border-[0.5px] border-white/15 px-5 text-white outline-none focus:border-white/30 duration-500'
-                    value={message} onChange={(e) => setMessage(e.target.value)} />
+                    value={message}
+                    onChange={(e) => {
+                        setMessage(e.target.value);
+                        setMessageError("")
+                    }} />
                 {messageError && <p className='text-red-500 text-sm'>{messageError}</p>}
             </div>
-            <div className='grid grid-cols-2 gap-2 pt-10'>
+            <div className='flex items-center lg:justify-between md:justify-center lg:gap-2 md:gap-4 lg:pt-10 md:pt-4 flex-wrap'>
                 <div className='px-2'>
-                    <button className='py-4 px-11 bg-gray-600 cursor-pointer hover:bg-amber-600 duration-500 text-lg font-medium'>Submit now</button>
+                    <button
+                        className='py-4 px-11 bg-gray-600 cursor-pointer hover:bg-amber-600 duration-500 text-lg font-medium'
+                        onClick={handleSubmit}
+                    >
+                        Submit now
+                    </button>
                 </div>
-                <div className='px-2 flex items-center justify-end gap-4 '>
+                <div className='px-2 flex items-center lg:justify-end md:justify-center lg:gap-4 md:gap-1 flex-wrap'>
                     <Link href={"tel:+84919394642"} className='flex gap-1 items-center group'>
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256" className='scale-75 group-hover:scale-90 duration-500'>
                             <g fill="#e17100" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray=""
