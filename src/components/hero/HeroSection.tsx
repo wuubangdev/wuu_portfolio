@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -18,8 +19,16 @@ const HeroSection: React.FC = () => {
                         <button className='py-4 px-11 bg-gray-600 cursor-pointer hover:bg-amber-600 duration-500 text-lg font-medium'>Contact me</button>
                     </div>
                     <div className='col-span-2 pl-10 pr-20 flex flex-col gap-4'>
-                        <div className='bg-green-300/10 flex-1 relative'>
-
+                        <div className='flex-1 relative'>
+                            <Image
+                                alt='avatar'
+                                src={'/avatar-hero.jpg'}
+                                fill
+                                className='object-cover'
+                                style={{
+                                    filter: 'grayscale(100%)'
+                                }}
+                            />
                         </div>
                     </div>
                 </div>
