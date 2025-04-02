@@ -81,7 +81,7 @@ const Projects: React.FC<ProjectProps> = ({ }) => {
                     <HeaderSection title='Projects' />
                 </div>
                 <h1 className='text-center text-[4rem] font-medium leading-none'>My Latest Project</h1>
-                <div className='pt-10 grid grid-cols-3 gap-4'>
+                <div className='pt-10 grid grid-cols-3 gap-6'>
                     {projects && projects.map((project) => <ProjectItem key={`project-${project.id}`} project={project} />)}
                 </div>
                 {!showMore &&

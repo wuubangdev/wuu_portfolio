@@ -14,7 +14,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
                     alt='project image'
                     src={project.imageUrl}
                     fill
-                    className='object-cover group-hover:scale-125 transition-all duration-500 ease-in-out'
+                    className='object-cover group-hover:scale-110 transition-all duration-500 ease-in-out'
                 />
             </div>
             <div className='py-8 px-11 flex flex-col gap-3'>
