@@ -11,11 +11,11 @@ const Experience = () => {
                     <HeaderSection title='Experience' />
                 </div>
                 <h1 className='text-center text-[4rem] font-medium leading-none'>Experience</h1>
-                <div className='pt-10 grid grid-cols-3'>
+                <div className='pt-10 flex flex-col gap-6'>
                     <ExperienceItem />
                     <ExperienceItem />
                     <ExperienceItem />
-                    <ExperienceItem /> 
+                    <ExperienceItem />
                 </div>
             </div>
         </section>
