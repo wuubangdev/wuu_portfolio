@@ -13,3 +13,26 @@ export interface IService {
     description: string;
     linkGit: string;
 }
+
+export interface IExperience {
+    id: number;
+    title: string;
+    description: string;
+    link: string;
+    timeJoin: string;
+    timeLeave: string;
+}
+
+export interface ISkill {
+    id: number;
+    link: string;
+    title: string;
+}
+
+export interface IContact {
+
+}
+
+export interface IHero {
+
+}

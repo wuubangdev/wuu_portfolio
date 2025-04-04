@@ -4,7 +4,7 @@ import React from 'react'
 
 const HeroSection: React.FC = () => {
     return (
-        <section className='w-full border-b-[1px] border-white/15 h-screen flex justify-center px-28 pt-24 relative'>
+        <section className='w-full border-b-[1px] border-white/15 min-h-screen flex justify-center px-28 pt-24 relative'>
             <div className='w-full h-full flex flex-col items-center border-x-[1px] border-white/15 relative'>
                 {/* Hero text */}
                 <div className='py-10 xl:text-[12rem] lg:text-[10rem] md:text-8xl leading-none font-bold text-white opacity-[2%]'>DEVELOPER</div>

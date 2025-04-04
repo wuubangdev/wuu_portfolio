@@ -1,5 +1,6 @@
 import React from 'react'
 import HeaderSection from '../utils/HeaderSection';
+import SkillItem from './SkillItem';
 
 const Skills: React.FC = () => {
     return (
@@ -9,7 +10,15 @@ const Skills: React.FC = () => {
                     <HeaderSection title='My Skills' />
                 </div>
                 <h1 className='text-center text-[4rem] font-medium leading-none'>Main Skills</h1>
-                <div className='pt-10 grid grid-cols-3'>
+                <div className='pt-10 grid grid-cols-4 gap-6'>
+                    <SkillItem />
+                    <SkillItem />
+                    <SkillItem />
+                    <SkillItem />
+                    <SkillItem />
+                    <SkillItem />
+                    <SkillItem />
+                    <SkillItem />
                 </div>
             </div>
         </section>

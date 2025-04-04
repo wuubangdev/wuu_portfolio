@@ -1,6 +1,8 @@
 import React from 'react'
-import HeaderSection from '../utils/HeaderSection'
-
+import HeaderSection from '../utils/HeaderSection';
+import { IExperience } from '@/types';
+import ExperienceItem from './ExperienceItem';
+const experiences: IExperience[] = [];
 const Experience = () => {
     return (
         <section className='w-full flex border-b-[1px] border-white/15 justify-center px-28 relative'>
@@ -8,8 +10,12 @@ const Experience = () => {
                 <div className='w-full flex items-center justify-center'>
                     <HeaderSection title='Experience' />
                 </div>
-                <h1 className='text-center text-[4rem] font-medium leading-none'>Experience & Education</h1>
+                <h1 className='text-center text-[4rem] font-medium leading-none'>Experience</h1>
                 <div className='pt-10 grid grid-cols-3'>
+                    <ExperienceItem />
+                    <ExperienceItem />
+                    <ExperienceItem />
+                    <ExperienceItem /> 
                 </div>
             </div>
         </section>
