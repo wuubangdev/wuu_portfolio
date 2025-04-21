@@ -30,7 +30,7 @@ const About: React.FC = () => {
                         </div>
                         <h1 className='text-[4rem] font-medium leading-none'>I Am Bang, Fullstack Developer</h1>
                         <h5 className='text-3xl font-semibold text-[#a9a9a9]'>I have 8+ years of experiences in Software Development for give you better services.</h5>
-                        <p className='text-xl font-extralight text-[#919195'>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite </p>
+                        <p className='text-xl font-extralight text-[#919195]'>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite </p>
                         <div className='pt-8 flex gap-10'>
                             <div className='flex flex-col gap-2 cursor-pointer'>
                                 <div className='text-6xl text-amber-600 font-medium'>500+</div>
