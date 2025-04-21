@@ -21,3 +21,9 @@ export interface IExperience {
     imageUrl: string;
     time: string;
 }
+
+export interface ISkill {
+    id: number;
+    title: string;
+    imageUrl: string;
+}
