@@ -13,3 +13,11 @@ export interface IService {
     description: string;
     linkGit: string;
 }
+
+export interface IExperience {
+    id: number;
+    company: string;
+    title: string;
+    imageUrl: string;
+    time: string;
+}
