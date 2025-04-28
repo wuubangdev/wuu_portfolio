@@ -20,14 +20,14 @@ const experiencesData: IExperience[] = [
     },
     {
         id: 3,
-        company: "PT Company",
+        company: "Phuc Thanh Company",
         title: "Mapping Developer",
         imageUrl: "/experience/phucthanh.png",
         time: "Jan. 2023 - May. 2024",
     },
     {
         id: 4,
-        company: "LRD - CTU",
+        company: "Can Tho University",
         title: "Researcher & Developer",
         imageUrl: "/experience/ctu.png",
         time: "Oct. 2021 - Jan. 2023",

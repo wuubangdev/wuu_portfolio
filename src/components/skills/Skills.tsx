@@ -1,6 +1,18 @@
 import React from 'react'
 import HeaderSection from '../utils/HeaderSection';
-import SkillItem from './SkillItem';
+import SkillItem, { SkillItemProps } from './SkillItem';
+
+const skills: SkillItemProps[] = [
+    { icon: '/skill/java.png', title: 'Java Core' },
+    { icon: '/skill/springboot.png', title: 'Java Spring' },
+    { icon: '/skill/ts.png', title: 'TypeScript' },
+    { icon: '/skill/nestjs.png', title: 'NestJS' },
+    { icon: '/skill/react.png', title: 'ReactJS' },
+    { icon: '/skill/nextjs.png', title: 'NextJS' },
+    { icon: '/skill/github.png', title: 'Github' },
+    { icon: '/skill/aws.png', title: 'Amazon Web Services' },
+
+]
 
 const Skills: React.FC = () => {
     return (
@@ -11,14 +23,9 @@ const Skills: React.FC = () => {
                 </div>
                 <h1 className='text-center text-[4rem] font-medium leading-none'>Main Skills</h1>
                 <div className='pt-10 grid grid-cols-4 gap-6'>
-                    <SkillItem />
-                    <SkillItem />
-                    <SkillItem />
-                    <SkillItem />
-                    <SkillItem />
-                    <SkillItem />
-                    <SkillItem />
-                    <SkillItem />
+                    {skills.map((skill, index) => (
+                        <SkillItem key={index} icon={skill.icon} title={skill.title} />
+                    ))}
                 </div>
             </div>
         </section>
