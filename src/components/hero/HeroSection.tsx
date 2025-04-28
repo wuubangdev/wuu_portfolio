@@ -5,9 +5,9 @@ import React from 'react'
 const HeroSection: React.FC = () => {
     return (
         <section className='w-full border-b-[1px] border-white/15 min-h-screen flex justify-center px-28 pt-24 relative'>
-            <div className='w-full h-full flex flex-col items-center border-x-[1px] border-white/15 relative'>
+            <div className='w-full flex-1 flex flex-col items-center border-x-[1px] border-white/15 relative'>
                 {/* Hero text */}
-                <div className='py-10 xl:text-[12rem] lg:text-[10rem] md:text-8xl leading-none font-bold text-white opacity-[2%]'>DEVELOPER</div>
+                <div className='sticky top-10 py-10 xl:text-[12rem] lg:text-[10rem] md:text-8xl leading-none font-bold text-white opacity-[5%]'>DEVELOPER</div>
                 {/* Main content */}
                 <div className='absolute inset-0 py-16 grid grid-cols-5 gap-4 px-20'>
                     <div className='col-span-3 flex flex-col justify-center items-start gap-10 px-20 pt-10'>
@@ -18,8 +18,8 @@ const HeroSection: React.FC = () => {
                         </div>
                         <button className='py-4 px-11 bg-gray-600 cursor-pointer hover:bg-amber-600 duration-500 text-lg font-medium'>Contact me</button>
                     </div>
-                    <div className='col-span-2 pl-10 pr-20 flex flex-col gap-4'>
-                        <div className='flex-1 relative'>
+                    <div className='col-span-2 pl-10 pr-20 flex flex-col justify-center gap-4'>
+                        <div className='relative h-3/4 w-full'>
                             <Image
                                 alt='avatar'
                                 src={'/avatar-hero.jpg'}
