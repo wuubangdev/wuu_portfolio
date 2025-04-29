@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/footer/Footer";
 import Navigation from "@/components/header/Navigation";
+import SplashCursor from "@/components/utils/SplashCursor";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,6 +16,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
         <Navigation />
         {children}
         <Footer />
+        <SplashCursor />
       </body>
     </html>
   );

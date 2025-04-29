@@ -20,8 +20,8 @@ const About: React.FC = () => {
                                     }}
                                 />
                                 <div className='absolute -bottom-8 -right-12 px-8 py-10 flex flex-col gap-2 justify-center items-center bg-black rounded-2xl'>
-                                    <div className='font-bold text-8xl'>2+</div>
-                                    <div className='text-[1rem] font-bold'>Years Exprience</div>
+                                    <div className='font-bold text-8xl cursor-default'>2+</div>
+                                    <div className='text-[1rem] font-bold cursor-default'>Years Exprience</div>
                                 </div>
                             </div>
                         </div>

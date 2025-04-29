@@ -80,7 +80,7 @@ const Projects: React.FC<ProjectProps> = ({ }) => {
                 <div className='w-full flex items-center justify-center'>
                     <HeaderSection title='Projects' />
                 </div>
-                <h1 className='text-center text-[4rem] font-medium leading-none'>My Latest Project</h1>
+                <h1 className='text-center text-[4rem] font-medium leading-none cursor-default'>My Latest Project</h1>
                 <div className='pt-10 grid grid-cols-3 gap-6'>
                     {projects && projects.map((project) => <ProjectItem key={`project-${project.id}`} project={project} />)}
                 </div>

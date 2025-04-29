@@ -1,7 +1,7 @@
 import React from 'react'
 import HeaderSection from '../utils/HeaderSection'
-import ExperiemceItem from './ExperiemceItem'
 import { IExperience } from '@/types'
+import ExperienceItem from './ExperienceItem'
 
 const experiencesData: IExperience[] = [
     {
@@ -41,9 +41,9 @@ const Experience = () => {
                 <div className='w-full flex items-center justify-center'>
                     <HeaderSection title='Experience' />
                 </div>
-                <h1 className='text-center text-[4rem] font-medium leading-none'>Experience</h1>
+                <h1 className='text-center text-[4rem] font-medium leading-none cursor-default'>Experience</h1>
                 <div className='pt-10 grid grid-cols-1 md:grid-cols-4 gap-2'>
-                    {experiencesData && experiencesData.map((exp, i) => <ExperiemceItem key={`experience-${exp.id}`} exp={{ ...exp, id: i }} />)}
+                    {experiencesData && experiencesData.map((exp, i) => <ExperienceItem key={`experience-${exp.id}`} exp={{ ...exp, id: i }} />)}
                 </div>
             </div>
         </section>

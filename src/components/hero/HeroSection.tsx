@@ -11,8 +11,8 @@ const HeroSection: React.FC = () => {
                 {/* Main content */}
                 <div className='absolute inset-0 py-16 grid grid-cols-5 gap-4 px-20'>
                     <div className='col-span-3 flex flex-col justify-center items-start gap-10 px-20 pt-10'>
-                        <h1 className='xl:text-8xl lg:text-6xl md:text-4xl font-bold'>Fullstack Web & GIS Developer</h1>
-                        <div className='flex items-center gap-4 mt-4 text-white/40'>
+                        <h1 className='xl:text-8xl lg:text-6xl md:text-4xl font-bold cursor-default'>Fullstack Web & GIS Developer</h1>
+                        <div className='flex items-center gap-4 mt-4 text-white/40 cursor-default'>
                             <span className='text-2xl'>BANG LE</span>
                             <div className='w-24 border-[0.5px] border-white/40'></div>
                         </div>

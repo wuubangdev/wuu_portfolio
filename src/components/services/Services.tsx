@@ -38,7 +38,7 @@ const Services: React.FC<ServicesProps> = ({ services }) => {
                 <div className='w-full flex items-center justify-center'>
                     <HeaderSection title='Services' />
                 </div>
-                <h1 className='text-center text-[4rem] font-medium leading-none'>My best services</h1>
+                <h1 className='text-center text-[4rem] font-medium leading-none cursor-default'>My best services</h1>
                 <div className='pt-10 grid grid-cols-3'>
                     {servicesData && servicesData.map((service, i) => <ServiceIteam key={`service-${service.id}`} service={{ ...service, id: i }} />)}
                 </div>

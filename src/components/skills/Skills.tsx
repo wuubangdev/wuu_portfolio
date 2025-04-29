@@ -21,7 +21,7 @@ const Skills: React.FC = () => {
                 <div className='w-full flex items-center justify-center'>
                     <HeaderSection title='My Skills' />
                 </div>
-                <h1 className='text-center text-[4rem] font-medium leading-none'>Main Skills</h1>
+                <h1 className='text-center text-[4rem] font-medium leading-none cursor-default'>Main Skills</h1>
                 <div className='pt-10 grid grid-cols-4 gap-6'>
                     {skills.map((skill, index) => (
                         <SkillItem key={index} icon={skill.icon} title={skill.title} />
