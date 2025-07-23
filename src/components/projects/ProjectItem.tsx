@@ -9,7 +9,7 @@ interface ProjectItemProps {
 const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
     return (
         <div className='w-full border-[1px] border-white/15 flex flex-col group'>
-            <div className='relative w-full aspect-square overflow-hidden'>
+            <div className='relative w-full aspect-[206/100] overflow-hidden'>
                 <Image
                     alt='project image'
                     src={project.imageUrl}
