@@ -29,34 +29,34 @@ const toolskills: SkillItemProps[] = [
 ]
 const Skills: React.FC = () => {
     return (
-        <section className='w-full flex border-b-[1px] border-white/15 justify-center px-28 relative'>
-            <div className='w-full flex flex-col gap-6 border-x-[1px] border-white/15 lg:py-28 lg:px-20 md:py-20 md:px-10 sm:py-10 sm:px-5'>
+        <section className='w-full flex border-b-[1px] border-white/15 justify-center px-4 md:px-28 relative'>
+            <div className='w-full flex flex-col gap-6 border-x-[1px] border-white/15 lg:py-28 lg:px-20 md:py-20 md:px-10 py-10 px-5'>
                 <div className='w-full flex items-center justify-center'>
                     <HeaderSection title='My Skills' />
                 </div>
-                <h1 className='text-center text-[4rem] font-medium leading-none cursor-default'>Main Skills</h1>
+                <h1 className='text-center text-[3rem] md:text-[4rem] font-medium leading-none cursor-default'>Main Skills</h1>
                 {/* Base */}
                 <h1 className='pt-4 text-amber-600 text-[2rem] font-medium leading-none cursor-default'>Base Skills</h1>
-                <div className='grid grid-cols-4 gap-6'>
+                <div className='grid md:grid-cols-4 grid-cols-2 gap-6'>
                     {baseSkills.map((skill, index) => (
                         <SkillItem key={index} icon={skill.icon} title={skill.title} />
                     ))}
                 </div>
                 {/* Front end */}
                 <h1 className='pt-4 text-amber-600 text-[2rem] font-medium leading-none cursor-default'>Frontend Skills</h1>
-                <div className='grid grid-cols-4 gap-6'>
+                <div className='grid md:grid-cols-4 grid-cols-2 gap-6'>
                     {frontskills.map((skill, index) => (
                         <SkillItem key={index} icon={skill.icon} title={skill.title} />
                     ))}
                 </div>
                 <h1 className='pt-4 text-amber-600 text-[2rem] font-medium leading-none cursor-default'>Backend Skills</h1>
-                <div className='grid grid-cols-4 gap-6'>
+                <div className='grid md:grid-cols-4 grid-cols-2 gap-6'>
                     {backskills.map((skill, index) => (
                         <SkillItem key={index} icon={skill.icon} title={skill.title} />
                     ))}
                 </div>
                 <h1 className='pt-4 text-amber-600 text-[2rem] font-medium leading-none cursor-default'>Other / Tools</h1>
-                <div className='grid grid-cols-4 gap-6'>
+                <div className='grid md:grid-cols-4 grid-cols-2 gap-6'>
                     {toolskills.map((skill, index) => (
                         <SkillItem key={index} icon={skill.icon} title={skill.title} />
                     ))}
