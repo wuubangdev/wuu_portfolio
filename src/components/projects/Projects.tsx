@@ -147,7 +147,7 @@ const Projects: React.FC<ProjectProps> = ({ }) => {
                 </div>
                 <h1 className='text-center text-[4rem] font-medium leading-none cursor-default'>My Latest Project</h1>
                 <div className='pt-10 grid grid-cols-3 gap-6' >
-                    {projectsData && projectsData.map((project) => <div key={`project-${project.id}`} onClick={() => openDetailHandle(project)}>
+                    {projectsData && projectsData.map((project) => <div className='cursor-pointer' key={`project-${project.id}`} onClick={() => openDetailHandle(project)}>
                         <ProjectItem project={project} />
                     </div>)}
                 </div>
