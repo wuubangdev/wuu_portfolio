@@ -35,13 +35,13 @@ const About: React.FC = () => {
                         <p className='text-xl font-extralight text-[#919195]'>I find joy in the craft of coding — from thoughtful UI interactions to robust backend systems. Every project is a chance for me to grow, collaborate, and deliver meaningful digital experiences.
                             Let&apos;s build something impactful together. </p>
                         <div className='md:pt-8 grid grid-cols-1 md:gap-10 gap-5'>
-                            <div className='col-span-2 flex flex-col gap-1 cursor-pointer'>
-                                <div className='text-3xl md:text-5xl text-amber-600 font-medium'>Can Tho University</div>
-                                <div className='text-[1rem] text-[#919195]'>Education</div>
-                            </div>
                             <div className='flex flex-col gap-1 cursor-pointer'>
                                 <div className='text-3xl md:text-5xl text-amber-600 font-medium'>HCM, VN</div>
                                 <div className='text-[1rem] text-[#919195]'>Address</div>
+                            </div>
+                            <div className='flex flex-col gap-1 cursor-pointer'>
+                                <div className='text-3xl md:text-5xl text-amber-600 font-medium'>Can Tho University</div>
+                                <div className='text-[1rem] text-[#919195]'>Education</div>
                             </div>
                             <div className='flex flex-col gap-1 cursor-pointer'>
                                 <div className='text-3xl md:text-5xl text-amber-600 font-medium'>Master</div>

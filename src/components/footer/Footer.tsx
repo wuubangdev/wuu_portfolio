@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
         <div className='w-full border-t-[0.5px] border-white/15 flex justify-center bg-gray-700/20 py-20'>
             <div className='container flex flex-col items-center gap-4'>
                 <Link href={'#home'}>
-                    <div className='px-4 py-2 rounded-full bg-white text-black font-extrabold text-3xl cursor-pointer'>B</div>
+                    <div className='px-4 py-2 rounded-full bg-white text-black font-extrabold text-3xl cursor-pointer hover:bg-amber-600 hover:text-white duration-500'>B</div>
                 </Link>
                 <div className='flex items-center gap-3'>
                     <Link href={"https://www.facebook.com/WuBangLee/?locale=vi_VN"} target='_blank' className='group' >

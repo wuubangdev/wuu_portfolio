@@ -176,12 +176,11 @@ const Projects: React.FC<ProjectProps> = ({ }) => {
                                 >
                                     <source src={detail?.imageUrl[0]} type="video/mp4" />
                                 </video>
-
                             </div>
                         </div>
                         {/* <p className="text-gray-700">{detail?.description}</p> */}
 
-                        <div className="space-y-2 flex md:flex-row flex-col justify-between">
+                        <div className="space-y-2 flex md:flex-row md:px-8 flex-col justify-between">
                             <div className='flex gap-2'>
                                 <strong className="block font-semibold text-amber-600">Frontend:</strong>
                                 <p className=''>{detail?.libraries.frontend.join(', ')}</p>

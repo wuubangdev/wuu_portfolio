@@ -44,7 +44,7 @@ const Navigation: React.FC = () => {
         <header className='w-full fixed top-0 z-[99999] flex px-8 justify-between items-center border-b-[1px] border-white/15 bg-[#090909]/50 backdrop-blur-[5px]'>
             <div className='flex items-center px-2'>
                 <div
-                    className=' cursor-pointer text-2xl font-bold px-3 py-2 rounded-full bg-white text-black'
+                    className=' cursor-pointer text-2xl font-bold px-5 py-2 rounded-full bg-white text-black hover:bg-amber-600 hover:text-white duration-500'
                     onClick={() => handleItemClick(0, '#home')}
                 >B</div>
             </div>
