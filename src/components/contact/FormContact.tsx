@@ -43,7 +43,7 @@ const FormContact: React.FC = () => {
         }
 
         if (!title) {
-            setTitleError("Title is required");
+            setTitleError("Message is required");
             valid = false;
         }
 
@@ -110,9 +110,9 @@ const FormContact: React.FC = () => {
                 </div>
 
                 <div className="flex flex-col gap-2 px-2 mt-4">
-                    <span className="text-[#919195]">Title*</span>
+                    <span className="text-[#919195]">Message*</span>
                     <textarea
-                        placeholder="Title"
+                        placeholder="Your Message"
                         rows={4}
                         className="w-full py-3 border-[0.5px] border-white/15 px-5 text-white outline-none focus:border-white/30 duration-500"
                         value={title}
