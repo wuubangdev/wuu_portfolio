@@ -29,7 +29,9 @@ const HeroSection: React.FC = () => {
                             <span className='text-2xl'>BANG LE</span>
                             <div className='w-24 border-[0.5px] border-white/40'></div>
                         </div>
-                        <button className='py-4 px-11 bg-gray-600 cursor-pointer hover:bg-amber-600 duration-500 text-lg font-medium'>Contact me</button>
+                        <Link href='mailto:levubang97@gmail.com'>
+                            <button className='py-4 px-11 bg-gray-600 cursor-pointer hover:bg-amber-600 duration-500 text-lg font-medium'>Contact me</button>
+                        </Link>
                     </div>
                     <div className='lg:col-span-2 md:col-span-3 md:pl-5 hidden md:flex flex-col items-center justify-center gap-4'>
                         <div className='relative 2xl:w-2/3 w-full aspect-[3/4]'>

@@ -46,7 +46,7 @@ const Navigation: React.FC = () => {
                 <div
                     className=' cursor-pointer text-2xl font-bold px-3 py-2 rounded-full bg-white text-black'
                     onClick={() => handleItemClick(0, '#home')}
-                >W</div>
+                >B</div>
             </div>
             <nav className='hidden md:flex'>
                 {items.map((item, index) => (

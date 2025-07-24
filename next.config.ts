@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'tonu-dark.netlify.app/static/media',
+        hostname: 'wuubang-access.s3.ap-southeast-1.amazonaws.com',
         pathname: '/**',
       },
     ],
