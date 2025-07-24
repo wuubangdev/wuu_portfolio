@@ -5,6 +5,7 @@ import HeroSection from "@/components/hero/HeroSection";
 import Projects from "@/components/projects/Projects";
 import Services from "@/components/services/Services";
 import Skills from "@/components/skills/Skills";
+import ScrollTop from "@/components/utils/ScrollTop";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Skills />
       <Experience />
       <Contact />
+      <ScrollTop />
     </>
 
   );

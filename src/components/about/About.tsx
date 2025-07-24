@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const About: React.FC = () => {
     return (
-        <section className='w-full flex border-b-[1px] border-white/15 justify-center md:px-28 px-4'>
+        <section id='about' className='w-full flex border-b-[1px] border-white/15 justify-center md:px-28 px-4'>
             <div className='w-full flex flex-col gap-6 border-x-[1px] border-white/15 p-8 lg:py-32 lg:px-20 md:py-20 md:px-10 sm:py-10 sm:px-5'>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-16 min-h-[100vh]'>
                     <div className='md:block hidden w-full'>

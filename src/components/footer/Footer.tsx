@@ -5,7 +5,9 @@ const Footer: React.FC = () => {
     return (
         <div className='w-full border-t-[0.5px] border-white/15 flex justify-center bg-gray-700/20 py-20'>
             <div className='container flex flex-col items-center gap-4'>
-                <div className='px-4 py-2 rounded-full bg-white text-black font-extrabold text-3xl cursor-pointer'>B</div>
+                <Link href={'#home'}>
+                    <div className='px-4 py-2 rounded-full bg-white text-black font-extrabold text-3xl cursor-pointer'>B</div>
+                </Link>
                 <div className='flex items-center gap-3'>
                     <Link href={"https://www.facebook.com/WuBangLee/?locale=vi_VN"} target='_blank' className='group' >
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0,0,256,256" className='scale-75 group-hover:scale-90 duration-500'>
