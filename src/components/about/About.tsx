@@ -34,10 +34,14 @@ const About: React.FC = () => {
                         <h5 className='md:text-3xl text-2xl font-semibold text-[#a9a9a9]'>With 2 years of hands-on experience in building modern web applications using technologies like Next.js, React, NestJS, and Java Spring, I focus on creating clean, responsive, and scalable solutions tailored to real-world needs.</h5>
                         <p className='text-xl font-extralight text-[#919195]'>I find joy in the craft of coding — from thoughtful UI interactions to robust backend systems. Every project is a chance for me to grow, collaborate, and deliver meaningful digital experiences.
                             Let&apos;s build something impactful together. </p>
-                        <div className='md:pt-8 grid grid-cols-2 md:gap-10 gap-5'>
+                        <div className='md:pt-8 grid grid-cols-1 md:gap-10 gap-5'>
                             <div className='col-span-2 flex flex-col gap-1 cursor-pointer'>
                                 <div className='text-3xl md:text-5xl text-amber-600 font-medium'>Can Tho University</div>
                                 <div className='text-[1rem] text-[#919195]'>Education</div>
+                            </div>
+                            <div className='flex flex-col gap-1 cursor-pointer'>
+                                <div className='text-3xl md:text-5xl text-amber-600 font-medium'>HCM, VN</div>
+                                <div className='text-[1rem] text-[#919195]'>Address</div>
                             </div>
                             <div className='flex flex-col gap-1 cursor-pointer'>
                                 <div className='text-3xl md:text-5xl text-amber-600 font-medium'>Master</div>
@@ -52,10 +56,6 @@ const About: React.FC = () => {
                                 <div className='text-3xl md:text-5xl text-amber-600 font-medium'>500+</div>
                                 <div className='text-[1rem] text-[#919195]'>Projects Completed</div>
                             </div> */}
-                            <div className='flex flex-col gap-1 cursor-pointer'>
-                                <div className='text-3xl md:text-5xl text-amber-600 font-medium'>HCM, VN</div>
-                                <div className='text-[1rem] text-[#919195]'>Address</div>
-                            </div>
                         </div>
                     </div>
                 </div>

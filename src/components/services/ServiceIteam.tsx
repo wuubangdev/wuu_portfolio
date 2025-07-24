@@ -8,7 +8,7 @@ interface ServiceIteamProp {
 
 const ServiceIteam: React.FC<ServiceIteamProp> = ({ service }) => {
     return (
-        <div className={`w-full py-16 px-8 ${service.id === 2 ? "" : "md:border-r-[1px] border-b-[1px]"}  bg-[#101010] border-white/15 flex flex-col gap-6 group cursor-pointer`}>
+        <div className={`w-full py-16 px-8 ${service.id === 2 ? "" : "md:border-r-[1px] md:border-b-[0px] border-b-[1px]"}  bg-[#101010] border-white/15 flex flex-col gap-6 group cursor-pointer`}>
             <div className='relative w-20 aspect-square'>
                 <Image
                     alt='project image'
