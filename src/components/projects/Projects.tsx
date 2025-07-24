@@ -140,24 +140,24 @@ const Projects: React.FC<ProjectProps> = ({ }) => {
         setDetail(project.detail || null);
     }
     return (
-        <section className='w-full flex border-b-[1px] border-white/15 justify-center px-28 relative'>
-            <div className='w-full flex flex-col gap-6 border-x-[1px] border-white/15 lg:py-28 lg:px-20 md:py-20 md:px-10 sm:py-10 sm:px-5'>
+        <section className='w-full flex border-b-[1px] border-white/15 justify-center px-4 md:px-28 relative'>
+            <div className='w-full flex flex-col gap-6 border-x-[1px] border-white/15 lg:py-28 lg:px-20 md:py-20 md:px-10 py-10 sm:px-5'>
                 <div className='w-full flex items-center justify-center'>
                     <HeaderSection title='Projects' />
                 </div>
-                <h1 className='text-center text-[4rem] font-medium leading-none cursor-default'>My Latest Project</h1>
-                <div className='pt-10 grid grid-cols-3 gap-6' >
-                    {projectsData && projectsData.map((project) => <div className='cursor-pointer' key={`project-${project.id}`} onClick={() => openDetailHandle(project)}>
+                <h1 className='text-center text-[2.5rem] md:text-[4rem] font-medium leading-none cursor-default'>My Latest Project</h1>
+                <div className='pt-10 grid md:grid-cols-3 grid-cols-1 gap-6 items-stretch' >
+                    {projectsData && projectsData.map((project) => <div className='cursor-pointer md:px-0 px-3' key={`project-${project.id}`} onClick={() => openDetailHandle(project)}>
                         <ProjectItem project={project} />
                     </div>)}
                 </div>
             </div>
             {showDetail && (
                 <div className='fixed inset-0 bg-black/80 flex items-center justify-center z-99999'>
-                    <div className="mx-auto w-4/5 p-6 bg-gray-900 shadow-lg relative">
+                    <div className="mx-auto md:w-4/5 w-9/10 md:p-6 px-3 py-6 bg-gray-900 shadow-lg relative">
                         <div className='flex items-end gap-3 mb-4'>
-                            <h1 className="text-2xl font-bold text-white uppercase">{detail?.title}</h1>
-                            <p className="text-sm text-amber-700 font-medium italic bg-amber-100 px-2 rounded-lg">{detail?.category}</p>
+                            <h1 className="md:text-2xl font-bold text-white uppercase">{detail?.title}</h1>
+                            <p className="text-sm hidden md:block text-amber-700 font-medium italic bg-amber-100 px-2 rounded-lg">{detail?.category}</p>
                         </div>
                         <a
                             href={detail?.linkLive}
@@ -168,7 +168,7 @@ const Projects: React.FC<ProjectProps> = ({ }) => {
                             🔗 Visit Live Site
                         </a>
                         <div className='flex items-center justify-center mt-4 w-full'>
-                            <div className="aspect-video w-3/4 overflow-hidden rounded-lg">
+                            <div className="aspect-video md:w-3/4 w-full overflow-hidden">
                                 <video
                                     controls
                                     width="100%"
@@ -181,7 +181,7 @@ const Projects: React.FC<ProjectProps> = ({ }) => {
                         </div>
                         {/* <p className="text-gray-700">{detail?.description}</p> */}
 
-                        <div className="space-y-2 flex justify-between">
+                        <div className="space-y-2 flex md:flex-row flex-col justify-between">
                             <div className='flex gap-2'>
                                 <strong className="block font-semibold text-amber-600">Frontend:</strong>
                                 <p className=''>{detail?.libraries.frontend.join(', ')}</p>
